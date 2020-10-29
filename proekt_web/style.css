@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+    font-family: monospace, sans-serif;
+    color: #ff2079;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: #ff2079;
+}
+
+
+header{
+    height: 100vh;
+    width: 100%;
+}
+
+.sectionDiv{
+
+    margin: 500px 0px;
+
+}
+.nav{
+    width: 100%;
+    height: 95vh;
+    background-color: black;
+    text-align: center;
+    z-index: 1;
+
+}
+.lists{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    margin: 0;
+    padding: 0;
+}
+.link{
+    font-family: monospace, sans-serif;
+    font-size: 70px;
+    padding: 15px;
+}
+
+.cont{
+    width: 100%;
+    height: 100%;
+    margin: 150px 0px 0px 0px;
+    position: relative;
+    text-align: center;
+    
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ff2079;
+    float: left;
+    width: 240px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #ff2079;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.column-left {
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    height: auto;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.textComment{
+    background-color: black;
+    color: #ff2079;
+}
+
+.textComment1{
+    background-color: black;
+    color: #ff2079;
+    margin: 15px 0px;
+    width: 25%;
+}
+
+
+.h1PaddingR{
+    padding: 0px 250px 0px 0px;
+}
+
+.h1PaddingL{
+    padding: 0px 0px 0px 250px;
+}
+
+.sectionDivInterest{
+  
+    margin: 900px 0px;
+
+}
+
+.pTextA{
+    padding: 20px 0px;
+}
