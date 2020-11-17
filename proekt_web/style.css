@@ -142,3 +142,13 @@ div.gallery {
 .pTextA{
     padding: 20px 0px;
 }
+
+
+
+.dropdown2{
+    display: none;
+
+}
+.dropdown:hover .dropdown2{
+    display: block;
+}
