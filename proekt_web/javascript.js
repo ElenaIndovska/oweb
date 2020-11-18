@@ -2,7 +2,20 @@
     document.getElementById("demo").innerHTML = "Hello World";
 
 }*/
-
+/*
+function like(){
+    if(document.getElementById("like1")){
+        counter1++;
+        document.getElementById("result1").innerHTML=counter1; 
+    }
+    if(document.getElementById("like2")){
+        counter2++;
+        document.getElementById("result2").innerHTML=counter2; 
+    }
+    
+        
+}
+*/
 
 var counter1=0;
 var counter2=0;
