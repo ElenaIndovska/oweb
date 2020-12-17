@@ -133,3 +133,11 @@ function zaKomentari(buttonKom, brojac){
         alert("Comments:\n" + niza12.join("\n"));
     }
 }
+
+function blogFja(buttonID, tekstID, pID, brojac){
+    var tekst = $("textarea#"+tekstID).val();
+    var d = new Date();
+
+    $("p#"+pID).append("<p>" + tekst + "<p>" + d + "</p>" + "</p");
+    
+}

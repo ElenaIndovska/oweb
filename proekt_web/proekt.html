@@ -22,7 +22,7 @@
         <a href="#about" class="link">About</a>      
         <a href="#gallery" class="link">Gallery</a>      
         <a href="#interests" class="link">Interests</a>      
-        <!--<a href="#blog" class="link">Blog</a>-->     
+        <a href="#blog" class="link">Blog</a>  
         <a href="#contact" class="link">Contact</a>
     </div>
     
@@ -316,14 +316,18 @@
         </div>
     </div>
 
-    <!--<div id=blog class="sectionDiv">
+    <div id=blog class="sectionDiv">
         
         <h2 align = "center" >Blog</h2>
-        <p align="center">This part is empty at first. If you have anything to speak about, do it below: </p>
+        <p align="center">This part is empty at first. If you have anything to say, do it below: </p>
+        <p align="center" id=tekstovi>
+            <textarea class="textComment" type="text" id="zaTekst" name="zaTekst" placeholder="What's on your mind?" cols="40" rows="5"></textarea>
+            <button id="zaBlog" onclick="blogFja(zaBlog, 'zaTekst', 'tekstovi', 1)" class="fa fa-comment">Sumbit</button>
+        </p>
 
 
 
-    </div>-->
+    </div>-
 
 
     <div id=contact class="sectionDiv">
@@ -346,7 +350,6 @@
                
 
             </form>
-            <!--<textarea class="textComment1" name="comment" placeholder="Impressions"></textarea>-->
         </div>
     </div>
 </body>
