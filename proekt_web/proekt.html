@@ -5,44 +5,33 @@
 <head>
     <meta charset = "utf-8">
     <title>My Web</title>
-    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src= "myjquery.js"></script>
+    <script src= "javascript.js"></script>
     <link rel="stylesheet" href="style.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src= "javascript.js"></script>
+    
+    
   
 
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <ul class="lists">
-                <li>
-                    <a href="#home" class="link" >Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="link">About</a>
-                </li>
-                <li>
-                    <a href="#gallery" class="link">Gallery</a>
-                </li>
-                <li>
-                    <a href="#interests" class="link">Interests</a>
-                </li>
-                <li>
-                    <a href="#blog" class="link">Blog</a>
-                </li>
-                <li>
-                    <a href="#contact" class="link">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="nav">        
+        <a href="#home" class="link" >Home</a>    
+        <a href="#about" class="link">About</a>      
+        <a href="#gallery" class="link">Gallery</a>      
+        <a href="#interests" class="link">Interests</a>      
+        <a href="#blog" class="link">Blog</a>     
+        <a href="#contact" class="link">Contact</a>
+    </div>
+    
+    <div id=home class="sectionDiv">
+        <h1 align = "center">Welcome to my page!</h1>
+    </div>
 
-    </header>
+    <div id=about class="sectionDiv">
 
-
-    <div class="sectionDiv">
-        
         
         <h2 align = "center" >About me</h2>
 
@@ -92,30 +81,36 @@
     </div>
 
 
-    <div class="sectionDiv" >
+    <div id=gallery class="sectionDiv" >
         
         <h2 align="center">Gallery</h2>
 
         <div class="gallery" >
-            <img src="forest/wood1.jpg" >
-            <div class="desc">
-                <button id="like1" onclick="like1()" class="fa fa-thumbs-up"><div id="result1" class="result"></div></button>
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+            <img id="slika1" onmouseover="mouseOver(this)" onmouseout="mouseOut()" src="forest/wood1.jpg" >
+            <div class="desc" id="kom1">
+                <button id="like1" onclick="lajkovi(like1, 'result1', 1)" class="fa fa-thumbs-up"><div id="result1" class="result"></div></button>
+                <button class="fa fa-comments"></button>
+                <input class="textComment" type="text" id="koment1" name="koment1" placeholder="Write a comment..."></input>
+                <button id="com1" onclick="komentar(com1, 'koment1', 1)" class="fa fa-comment"></button>
+            </div>
+        </div>
+        
+
+        <div class="gallery" >
+            <img id="slika2" src="forest/wood6.jpg" >
+            <div class="desc" id="kom2">
+                <button id="like2" onclick="lajkovi(like2, 'result2', 2)" class="fa fa-thumbs-up"><div id="result2" class="result"></div></button>
+                <!--<textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>-->
+                <button onclick="komentar()">Comment</button>
+                <p id="kom2"></p>
+                
             </div>
         </div>
 
         <div class="gallery" >
-            <img src="forest/wood6.jpg" >
+            <img id="slika3" src="forest/wood5.jpg" >
             <div class="desc">
-                <button id="like2" onclick="like2()" class="fa fa-thumbs-up"><div id="result2" class="result"></div></button>
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
-            </div>
-        </div>
-
-        <div class="gallery" >
-            <img src="forest/wood5.jpg" >
-            <div class="desc">
-                <button id="like3" onclick="like3()" class="fa fa-thumbs-up"><div id="result3" class="result"></div></button>
+                <button id="like3" onclick="lajkovi(like3, 'result3', 3)" class="fa fa-thumbs-up"><div id="result3" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -124,7 +119,7 @@
         <div class="gallery" >
             <img src="forest/wood4.jpg" >
             <div class="desc">
-                <button id="like4" onclick="like4()" class="fa fa-thumbs-up"><div id="result4" class="result"></div></button>
+                <button id="like4" onclick="lajkovi(like4, 'result4', 4)" class="fa fa-thumbs-up"><div id="result4" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -133,7 +128,7 @@
         <div class="gallery" >
         <img src="forest/wood3.jpg"  >
             <div class="desc">
-                <button id="like5" onclick="like5()" class="fa fa-thumbs-up"><div id="result5" class="result"></div></button>
+                <button id="like5" onclick="lajkovi(like5, 'result5', 5)" class="fa fa-thumbs-up"><div id="result5" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -142,7 +137,7 @@
         <div class="gallery" >
             <img src="forest/wood2.jpg" >
             <div class="desc">
-                <button id="like6" onclick="like6()" class="fa fa-thumbs-up"><div id="result6" class="result"></div></button>
+                <button id="like6" onclick="lajkovi(like6, 'result6', 6)" class="fa fa-thumbs-up"><div id="result6" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -151,7 +146,7 @@
         <div class="gallery" >
             <img src="forest/wood2.jpg" >
             <div class="desc">
-                <button id="like7" onclick="like7()" class="fa fa-thumbs-up"><div id="result7" class="result"></div></button>
+                <button id="like7" onclick="lajkovi(like7, 'result7', 7)" class="fa fa-thumbs-up"><div id="result7" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -160,7 +155,7 @@
         <div class="gallery" >
             <img src="forest/wood6.jpg" >
             <div class="desc">
-                <button id="like8" onclick="like8()" class="fa fa-thumbs-up"><div id="result8" class="result"></div></button>
+                <button id="like8" onclick="lajkovi(like8, 'result8', 8)" class="fa fa-thumbs-up"><div id="result8" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -169,7 +164,7 @@
         <div class="gallery" >
             <img src="forest/wood4.jpg" >
             <div class="desc">
-                <button id="like9" onclick="like9()" class="fa fa-thumbs-up"><div id="result9" class="result"></div></button>
+                <button id="like9" onclick="lajkovi(like9, 'result9', 9)" class="fa fa-thumbs-up"><div id="result9" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -178,7 +173,7 @@
         <div class="gallery" >
             <img src="forest/wood5.jpg" >
             <div class="desc">
-                <button id="like10" onclick="like10()" class="fa fa-thumbs-up"><div id="result10" class="result"></div></button>
+                <button id="like10" onclick="lajkovi(like10, 'result10', 10)" class="fa fa-thumbs-up"><div id="result10" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -187,7 +182,7 @@
         <div class="gallery" >
         <img src="forest/wood3.jpg" width="500" height="500" >
             <div class="desc">
-                <button id="like11" onclick="like11()" class="fa fa-thumbs-up"><div id="result11" class="result"></div></button>
+                <button id="like11" onclick="lajkovi(like11, 'result11', 11)" class="fa fa-thumbs-up"><div id="result11" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -196,7 +191,7 @@
         <div class="gallery" >
             <img src="forest/wood1.jpg" >
             <div class="desc">
-                <button id="like12" onclick="like12()" class="fa fa-thumbs-up"><div id="result12" class="result"></div></button>
+                <button id="like12" onclick="lajkovi(like12, 'result12', 12)" class="fa fa-thumbs-up"><div id="result12" class="result"></div></button>
 
                 <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
             </div>
@@ -204,7 +199,8 @@
     </div>
 
 
-    <div class="sectionDivInterest">
+    <div id=interests class="sectionDiv">
+
 
         <h2 align="center">Interests</h2>
 
@@ -299,17 +295,17 @@
         </div>
     </div>
 
-    <div class="sectionDiv">
+    <div id=blog class="sectionDiv">
         
         <h2 align = "center" >Blog</h2>
-        
+        <p align="center">This part is empty at first. If you have anything to speak about, do it below: </p>
 
 
 
     </div>
 
 
-    <div class="sectionDiv">
+    <div id=contact class="sectionDiv">
 
         <h2 align="center">Contact</h2>
         <div class="cont">

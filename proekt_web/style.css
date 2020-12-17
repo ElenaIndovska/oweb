@@ -20,37 +20,20 @@ a{
     color: #ff2079;
 }
 
-
-header{
-    height: 100vh;
-    width: 100%;
-}
-
 .sectionDiv{
-
-    margin: 500px 0px;
-
+    margin-top: 10%;
 }
 .nav{
-    width: 100%;
-    height: 95vh;
+    overflow: hidden;
     background-color: black;
-    text-align: center;
-    z-index: 1;
-
-}
-.lists{
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    top: 10px;
+    left: 10%;
+    position: fixed;
 }
-li{
-    margin: 0;
-    padding: 0;
-}
+
+
+
 .link{
     font-family: monospace, sans-serif;
     font-size: 500%;
@@ -131,9 +114,9 @@ div.gallery {
     padding: 0px 0px 0px 250px;
 }
 
-.sectionDivInterest{
+.sectionDivInterests{
   
-    margin: 900px 0px;
+    margin: 500px 0px 0px 0px;
 
 }
 
