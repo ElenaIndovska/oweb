@@ -22,7 +22,7 @@
         <a href="#about" class="link">About</a>      
         <a href="#gallery" class="link">Gallery</a>      
         <a href="#interests" class="link">Interests</a>      
-        <a href="#blog" class="link">Blog</a>     
+        <!--<a href="#blog" class="link">Blog</a>-->     
         <a href="#contact" class="link">Contact</a>
     </div>
     
@@ -89,9 +89,10 @@
             <img id="slika1" onmouseover="mouseOver(this)" onmouseout="mouseOut()" src="forest/wood1.jpg" >
             <div class="desc" id="kom1">
                 <button id="like1" onclick="lajkovi(like1, 'result1', 1)" class="fa fa-thumbs-up"><div id="result1" class="result"></div></button>
-                <button class="fa fa-comments"></button>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 1)" class="fa fa-comments"><div id="kolku1" class="result"></div></button>
                 <input class="textComment" type="text" id="koment1" name="koment1" placeholder="Write a comment..."></input>
-                <button id="com1" onclick="komentar(com1, 'koment1', 1)" class="fa fa-comment"></button>
+                <button id="com1" onclick="brojKomentari(com1, 'koment1', 'kolku1', 1)" class="fa fa-comment"></button>
+                
             </div>
         </div>
         
@@ -100,9 +101,9 @@
             <img id="slika2" src="forest/wood6.jpg" >
             <div class="desc" id="kom2">
                 <button id="like2" onclick="lajkovi(like2, 'result2', 2)" class="fa fa-thumbs-up"><div id="result2" class="result"></div></button>
-                <!--<textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>-->
-                <button onclick="komentar()">Comment</button>
-                <p id="kom2"></p>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 2)" class="fa fa-comments"><div id="kolku2" class="result"></div></button>
+                <input class="textComment" type="text" id="koment2" name="koment2" placeholder="Write a comment..."></input>
+                <button id="com2" onclick="brojKomentari(com2, 'koment2', 'kolku2', 2)" class="fa fa-comment"></button>
                 
             </div>
         </div>
@@ -112,7 +113,9 @@
             <div class="desc">
                 <button id="like3" onclick="lajkovi(like3, 'result3', 3)" class="fa fa-thumbs-up"><div id="result3" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 3)" class="fa fa-comments"><div id="kolku3" class="result"></div></button>
+                <input class="textComment" type="text" id="koment3" name="koment3" placeholder="Write a comment..."></input>
+                <button id="com3" onclick="brojKomentari(com3, 'koment3', 'kolku3', 3)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -121,7 +124,9 @@
             <div class="desc">
                 <button id="like4" onclick="lajkovi(like4, 'result4', 4)" class="fa fa-thumbs-up"><div id="result4" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 4)" class="fa fa-comments"><div id="kolku4" class="result"></div></button>
+                <input class="textComment" type="text" id="koment4" name="koment4" placeholder="Write a comment..."></input>
+                <button id="com4" onclick="brojKomentari(com4, 'koment4', 'kolku4', 4)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -130,7 +135,9 @@
             <div class="desc">
                 <button id="like5" onclick="lajkovi(like5, 'result5', 5)" class="fa fa-thumbs-up"><div id="result5" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 5)" class="fa fa-comments"><div id="kolku5" class="result"></div></button>
+                <input class="textComment" type="text" id="koment5" name="koment5" placeholder="Write a comment..."></input>
+                <button id="com5" onclick="brojKomentari(com5, 'koment5', 'kolku5', 5)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -139,7 +146,9 @@
             <div class="desc">
                 <button id="like6" onclick="lajkovi(like6, 'result6', 6)" class="fa fa-thumbs-up"><div id="result6" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 6)" class="fa fa-comments"><div id="kolku6" class="result"></div></button>
+                <input class="textComment" type="text" id="koment6" name="koment6" placeholder="Write a comment..."></input>
+                <button id="com6" onclick="brojKomentari(com6, 'koment6', 'kolku6', 6)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -148,7 +157,9 @@
             <div class="desc">
                 <button id="like7" onclick="lajkovi(like7, 'result7', 7)" class="fa fa-thumbs-up"><div id="result7" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 7)" class="fa fa-comments"><div id="kolku7" class="result"></div></button>
+                <input class="textComment" type="text" id="koment7" name="koment7" placeholder="Write a comment..."></input>
+                <button id="com7" onclick="brojKomentari(com7, 'koment7', 'kolku7', 7)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -157,7 +168,9 @@
             <div class="desc">
                 <button id="like8" onclick="lajkovi(like8, 'result8', 8)" class="fa fa-thumbs-up"><div id="result8" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 8)" class="fa fa-comments"><div id="kolku8" class="result"></div></button>
+                <input class="textComment" type="text" id="koment8" name="koment8" placeholder="Write a comment..."></input>
+                <button id="com8" onclick="brojKomentari(com8, 'koment8', 'kolku8', 8)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -166,7 +179,9 @@
             <div class="desc">
                 <button id="like9" onclick="lajkovi(like9, 'result9', 9)" class="fa fa-thumbs-up"><div id="result9" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 9)" class="fa fa-comments"><div id="kolku9" class="result"></div></button>
+                <input class="textComment" type="text" id="koment9" name="koment9" placeholder="Write a comment..."></input>
+                <button id="com9" onclick="brojKomentari(com9, 'koment9', 'kolku9', 9)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -175,7 +190,9 @@
             <div class="desc">
                 <button id="like10" onclick="lajkovi(like10, 'result10', 10)" class="fa fa-thumbs-up"><div id="result10" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 10)" class="fa fa-comments"><div id="kolku10" class="result"></div></button>
+                <input class="textComment" type="text" id="koment10" name="koment10" placeholder="Write a comment..."></input>
+                <button id="com10" onclick="brojKomentari(com10, 'koment10', 'kolku10', 10)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -184,7 +201,9 @@
             <div class="desc">
                 <button id="like11" onclick="lajkovi(like11, 'result11', 11)" class="fa fa-thumbs-up"><div id="result11" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 11)" class="fa fa-comments"><div id="kolku11" class="result"></div></button>
+                <input class="textComment" type="text" id="koment11" name="koment11" placeholder="Write a comment..."></input>
+                <button id="com11" onclick="brojKomentari(com11, 'koment11', 'kolku11', 11)" class="fa fa-comment"></button>
             </div>
         </div>
 
@@ -193,7 +212,9 @@
             <div class="desc">
                 <button id="like12" onclick="lajkovi(like12, 'result12', 12)" class="fa fa-thumbs-up"><div id="result12" class="result"></div></button>
 
-                <textarea class="textComment" name="comment" placeholder="Write a comment..."></textarea>
+                <button id="zaZbirot" onclick="zaKomentari(zaZbirot, 12)" class="fa fa-comments"><div id="kolku12" class="result"></div></button>
+                <input class="textComment" type="text" id="koment12" name="koment12" placeholder="Write a comment..."></input>
+                <button id="com12" onclick="brojKomentari(com12, 'koment12', 'kolku12', 12)" class="fa fa-comment"></button>
             </div>
         </div>
     </div>
@@ -295,14 +316,14 @@
         </div>
     </div>
 
-    <div id=blog class="sectionDiv">
+    <!--<div id=blog class="sectionDiv">
         
         <h2 align = "center" >Blog</h2>
         <p align="center">This part is empty at first. If you have anything to speak about, do it below: </p>
 
 
 
-    </div>
+    </div>-->
 
 
     <div id=contact class="sectionDiv">
@@ -318,14 +339,14 @@
             </ul>
             <form>
                 <label for="name">Name:</label>
-                <input class="textComment" type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <input class="textComment" type="text" id="name" name="name" placeholder="Enter your name...">
                 <label for="email">Email:</label>
                 <input class="textComment" type="email" id="email" name="email" placeholder="Enter your email..." required>
-                <input class="textComment" type="submit" value="Submit">
+                <button class="textComment" type="submit" id="submit">Submit</button>
                
 
             </form>
-            <textarea class="textComment1" name="comment" placeholder="Impressions"></textarea>
+            <!--<textarea class="textComment1" name="comment" placeholder="Impressions"></textarea>-->
         </div>
     </div>
 </body>

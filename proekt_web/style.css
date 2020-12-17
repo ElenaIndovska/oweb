@@ -95,7 +95,7 @@ div.gallery {
 .textComment{
     background-color: black;
     color: #ff2079;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .textComment1{
@@ -105,6 +105,10 @@ div.gallery {
     width: 25%;
 }
 
+.textComment2{
+    background-color: black;
+    color: #ff2079;
+}
 
 .h1PaddingR{
     padding: 0px 250px 0px 0px;
